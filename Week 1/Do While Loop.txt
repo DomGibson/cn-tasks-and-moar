@@ -1,0 +1,6 @@
+"While" loop will check the condition beforehand
+and then will execute the following statement.
+
+"Do" loop will execute the following statement
+and then will check the condition.
+
