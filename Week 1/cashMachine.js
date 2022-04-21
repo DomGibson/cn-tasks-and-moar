@@ -6,14 +6,14 @@ let bank = {
             nameFirst: "DOMINIK",
             nameLast: "GIBSON",
             balance: "250",
-            pin: "1234"
+            pin: 1234
         },
         peterPan: {
             id: 2,
             nameFirst: "PETER",
             nameLast: "PAN",
             balance: "550",
-            pin: "6666"
+            pin: 6666
         },
     }
 }
@@ -23,35 +23,51 @@ let bank = {
 let dGibson = bank.bankProfiles.dominikGibson
 let pPan = bank.bankProfiles.peterPan
 
-let myInput = 1
-let myPin = "1234"
+// let myInput = 1
+// let myPin = "1234"
 
-//DGIBSON
-if (myInput === dGibson.id) {
-    console.log(`PLEASE ENTER PIN FOR ACCOUNT: ${myInput}: ${myPin}`);
-}
-if (myInput != dGibson.id) {
-    console.log(`INCORRECT ACCOUNT...`);
-}
-if (myInput === dGibson.id && myPin === dGibson.pin) {
-    console.log(`THE PIN ${myPin} IS CORRECT`);
-    console.log(`BALANCE: ${dGibson.balance}`);
-} else if (myInput != dGibson.id && myPin != dGibson.pin) {
-    console.log(`PIN *${myPin}* IS INCORRECT...`);
-}
+// //DGIBSON
+// if (myInput === dGibson.id) {
+//     console.log(`PLEASE ENTER PIN FOR ACCOUNT: ${myInput}: ${myPin}`);
+// }
+// if (myInput != dGibson.id) {
+//     console.log(`INCORRECT ACCOUNT...`);
+// }
+// if (myInput === dGibson.id && myPin === dGibson.pin) {
+//     console.log(`THE PIN ${myPin} IS CORRECT`);
+//     console.log(`BALANCE: ${dGibson.balance}`);
+// } else if (myInput != dGibson.id && myPin != dGibson.pin) {
+//     console.log(`PIN *${myPin}* IS INCORRECT...`);
+// }
 
 
-//PPAN
-if (myInput === pPan.id) {
-    console.log(`PLEASE ENTER PIN FOR ACCOUNT: ${myInput}: ${myPin}`);
-} else if (myInput != pPan.id) {
-    console.log(`INCORRECT ACCOUNT...`);
-}
+// //PPAN
+// if (myInput === pPan.id) {
+//     console.log(`PLEASE ENTER PIN FOR ACCOUNT: ${myInput}: ${myPin}`);
+// } else if (myInput != pPan.id) {
+//     console.log(`INCORRECT ACCOUNT...`);
+// }
 
-if (myInput === pPan.id && myPin === pPan.pin) {
-    console.log(`THE PIN ${myPin} IS CORRECT`);
-    console.log(`BALANCE: ${pPan.balance}`);
-} else if (myInput != pPan.id && myPin != pPan.pin) {
-    console.log(`PIN *${myPin}* IS INCORRECT...`);
-}
+// if (myInput === pPan.id && myPin === pPan.pin) {
+//     console.log(`THE PIN ${myPin} IS CORRECT`);
+//     console.log(`BALANCE: ${pPan.balance}`);
+// } else if (myInput != pPan.id && myPin != pPan.pin) {
+//     console.log(`PIN *${myPin}* IS INCORRECT...`);
+// }
 
+function cashMachine(myInput, myPin) {
+    if (myInput === dGibson.id && myPin === dGibson.pin) {
+        console.log(`ACC NUM: ${myInput}`);
+        console.log(`PIN: ${myPin}`);
+        console.log(`AVAILABLE BALANCE: ${dGibson.balance}`);
+    } else if (myInput === pPan.id && myPin === pPan.pin) {
+        console.log(`ACC NUM: ${myInput}`);
+        console.log(`PIN: ${myPin}`);
+        console.log(`AVAILABLE BALANCE: ${pPan.balance}`);
+    } 
+    
+    else {
+        cashMachine(2, 6666);
+    }
+}
+console.log(cashMachine());
