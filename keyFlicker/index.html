@@ -1,37 +1,63 @@
-const keypress = document.getElementById("main-keypress")
-const code = document.getElementById("code-press")
-const key = document.getElementById("key-press")
-const which = document.getElementById("which-press")
-const scroller = document.getElementById("scroller")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/keyPressLogger/style3.css">
+    <title>HLKPLTFD: Handy Little Key-Press Logger Thing For Dummies!</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-keypress">
+            <h1 id="main-keypress">keypress:</h1>
+        </div>
+
+        <div class="code-press">
+
+            <h3 id="code-press">.code</h3>
+        </div>
+
+        <div class="key-press">
+
+            <h3 id="key-press">.key</h3>
+        </div>
+
+        <div class="which-press">
+
+            <h3 id="which-press">.which</h3>
+        </div>
+      </div>
 
 
-// EXTRA
-document.getElementById("input").addEventListener('keyup', function(event) {
+    <br>
+            <h2 class="random-text">
+                View Your History, Below...
+            </h2>
+    <br>
 
-    document.getElementById("result").innerHTML+=(event.key);
-    document.getElementById("result2").innerHTML+=(event.key+", ");
-    document.getElementById("result3").innerHTML+=(event.which+", ");
 
 
-})
-
-// KeyboardEvent.addEventListener("keypress", () => {
-//     keypress.textContent = `${keypress.name}`;
-//     code.textContent = `${keypress.name}`;
-//     key.textContent = `${keypress.name}`;
-//     which.textContent = `${keypress.name}`;
+      <div class="scroll-container">
+        <div id="scroll-window">
+            <br>
+            <h2>history...</h2>
+            <input type="text" placeholder="type something..." id="input">
     
-// })
+    <br><br>
+    
+            <div id="result"></div>
+            <br>
+            <div id="result2"></div>
+            <br>
+            <div id="result3"></div>
+            <br>
+        </div>
+      </div>
+    
 
-// window.setTimeout((something) => {
-//     alert(something);
-// }, 1000, "Press Any Key To Begin..." )
 
-document.addEventListener('keydown', logKey);
-
-function logKey(event) {
-  code.textContent = ` ${event.code}`;
-  key.textContent = ` ${event.key}`;
-  which.textContent = ` ${event.which}`;
-  keypress.textContent = ` ${event.which}`;
-}
+      <script src="/keyPressLogger/app3.js"></script>
+</body>
+</html>
