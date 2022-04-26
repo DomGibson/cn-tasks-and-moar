@@ -10,6 +10,8 @@ document.getElementById("input").addEventListener('keyup', function(event) {
 
     document.getElementById("result").innerHTML+=(event.key);
     document.getElementById("result2").innerHTML+=(event.key+", ");
+    document.getElementById("result3").innerHTML+=(event.which+", ");
+
 
 })
 
@@ -33,4 +35,3 @@ function logKey(event) {
   which.textContent = ` ${event.which}`;
   keypress.textContent = ` ${event.which}`;
 }
-
