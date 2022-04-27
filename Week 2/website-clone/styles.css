@@ -1,0 +1,35 @@
+body {
+background-color: white;
+}
+
+.container {
+    display: flex;
+    flex: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 80px;
+    bottom: 60%;
+    color: white;
+}
+
+.header-p {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+#image {
+    width: 100%;
+    min-width: 50%;
+    max-height: 1000px;
+    opacity: 70%;
+}
