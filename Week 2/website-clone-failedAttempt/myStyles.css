@@ -1,0 +1,345 @@
+body {
+background-color: rgb(255, 255, 255);
+padding: 50px;
+}
+
+.flexbox-container {
+  display: flex;
+
+}
+
+.flexbox-main {
+  width: 100%;
+  margin: 10px;
+  background-color: white;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr 1.9fr 1fr 1fr 1fr 1fr;
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "main-heading main-heading main-heading main-heading main-heading main-heading main-heading main-heading main-heading"
+    "advert-banner advert-banner advert-banner advert-banner advert-banner advert-banner advert-banner advert-banner advert-banner"
+    "content-1 content-1 content-1 content-2 content-2 content-2 content-3 content-3 content-3"
+    "cat1 cat1 cat2 cat2 cat3 cat3 cat4 cat4 cat5"
+    "cat6 cat7 cat7 cat8 cat8 cat9 cat9 cat10 cat10";
+}
+
+.main-heading { grid-area: main-heading; 
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 9px;
+}
+
+.bux-divider {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.bux-text {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px ;
+  padding-right: 26px;
+  margin-right: 1px;
+}
+
+.bux-text2 {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px ;
+  padding-right: 26px;
+  left: 260px;
+}
+
+.bux-text3 {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px ;
+  padding-right: 26px;
+  left: 418px;
+}
+
+.bux-text4 {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px ;
+  padding-right: 26px;
+  left: 577px;
+}
+
+.bux-text5 {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px ;
+  padding-right: 26px;
+  left: 683px;
+}
+
+.bux-text6 {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: -35px;
+  left: 847px;
+}
+
+.bux-text7 {
+  position: absolute;
+  font-family: 'Helvetica', sans-serif;
+  align-content: center;
+  border: black;
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px ;
+  padding-right: 270px;
+  left: 997px;
+}
+
+#bux-img {
+  width: auto;
+  height: 175px;
+}
+
+
+.advert-banner { grid-area: advert-banner; 
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+  background: #9DC852;
+  color: #9DC852;
+  font-size: 30px;
+}
+
+#sale-banner {
+  text-align: center;
+  align-self: center;
+  display: block;
+}
+
+
+
+.content-1 { grid-area: content-1; 
+  overflow: hidden;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: #ffd12a;
+  color: white;
+  font-size: 30px;
+
+}
+
+.apple-section .apple-container-layout-1 {
+    padding: 30px;
+}
+.apple-container-layout {
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+}
+
+.content-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.content-image-layout {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+}
+
+
+.content-2 { grid-area: content-2;
+  overflow: hidden;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: #d4ff37;
+  color: white;
+  font-size: 30px;
+}
+
+.content-3 { grid-area: content-3; 
+  overflow: hidden;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  margin-top: 5px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: #31ff68;
+  color: white;
+  font-size: 30px;
+
+}
+
+
+
+
+
+.cat1 { grid-area: cat1;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #ff23c4;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat2 { grid-area: cat2; 
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #ff1e8b;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat3 { grid-area: cat3;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #ff1e1e;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat4 { grid-area: cat4; 
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #ffaf19;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat5 { grid-area: cat5;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #ffec17;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat6 { grid-area: cat6; 
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #69ff1e;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat7 { grid-area: cat7;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #21ff8c;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat8 { grid-area: cat8;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #0ee3ff;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat9 { grid-area: cat9;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #2595ff;
+  color: white;
+  font-size: 30px;
+
+}
+
+.cat10 { grid-area: cat10;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  padding: 100px;
+  text-align: center;
+  background: #346aff;
+  color: white;
+  font-size: 30px;
+
+}
