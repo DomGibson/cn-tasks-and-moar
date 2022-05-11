@@ -1,0 +1,140 @@
+@import url('http://fonts.cdnfonts.com/css/serious-rounded');
+
+body {
+    background-color: rgb(255, 224, 141);
+}
+
+.heading-main {
+    margin: 25px;
+    text-align: center;
+    font-family: 'seriousr2b', sans-serif;
+    font-size: 48px;
+    word-spacing: 0;
+    letter-spacing: -3px;
+    color: white;
+    text-shadow: 5px 5px 2px rgba(63, 63, 63, 0.832);
+    transition-duration: .2s;
+}
+
+.heading-main:hover {
+    margin: 23.8px;
+    text-align: center;
+    font-family: 'seriousr2b', sans-serif;
+    font-size: 50px;
+    word-spacing: -2px;
+    letter-spacing: -1px;
+    color: white;
+    text-shadow: 7px 7px 2px rgba(63, 63, 63, 0.832);
+    transition-duration: .2s;
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+.container {  
+  display: grid;
+
+}
+
+.main-content {
+
+}
+
+  
+.l2 {
+  margin-left: 850px;
+  margin-top: -325px;
+}
+
+
+.leader-1-head {
+  position: absolute;
+  margin-left: 200px;
+  width: 200px;
+  z-index: 5;
+}
+.leader-1-torso {
+  position: relative;
+  margin-left: 165px;
+  top: 150px;
+  width: 250px;
+}
+.leader-1-larm {
+  position: relative;
+  width: 100px;
+  margin-left: -310px;
+  top: 50px;
+}
+.leader-1-rarm {
+  position: relative;
+  width: 100px;
+  margin-left: 170px;
+  top: 50px;
+  transform: rotate(-45deg);
+}
+.leader-1-lleg {
+  position: relative;
+  width: 100px;
+  margin-left: -175px;
+  top: 250px;
+  transform: rotate(-30deg);
+}
+.leader-1-rleg {
+  position: relative;
+  width: 100px;
+  margin-left: -250px;
+  top: 250px;
+  transform: rotate(-10deg);
+}
+
+
+
+.leader-2-head {
+  position: absolute;
+  margin-left: 200px;
+  width: 200px;
+  z-index: 5;
+}
+.leader-2-torso {
+  position: relative;
+  margin-left: 165px;
+  top: 150px;
+  width: 250px;
+}
+.leader-2-larm {
+  position: relative;
+  width: 50px;
+  margin-left: -250px;
+  top: 50px;
+}
+.leader-2-rarm {
+  position: relative;
+  width: 50px;
+  margin-left: 140px;
+  top: 50px;
+}
+.leader-2-lleg {
+  position: relative;
+  width: 50px;
+  margin-left: -70px;
+  top: 225px;
+  transform: rotate(10deg);
+}
+.leader-2-rleg {
+  position: relative;
+  width: 50px;
+  margin-left: -220px;
+  top: 225px;
+}
